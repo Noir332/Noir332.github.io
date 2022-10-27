@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          nav a {
+            @apply text-nav hover:text-black font-raleway;
+          }
+
+          nav a.active {
+            @apply text-black;
+          }
+
+          .button-primary {
+            @apply bg-primary py-[12px] px-[30px] text-white rounded-full hover:bg-secondary;
+          }
+
+          .text-gradient {
+            background: linear-gradient(90.01deg, #E18700 35.24%, #FF32AD 66.21%, #0EC5D7 97.18%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+          }
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-header">
+        <section class="container mx-auto">
+            <section id="topbar" class="flex justify-between gap-10 items-center py-5">
+                <div id="left-side" class="flex gap-10 items-center">
+
+                    <div class="flex items-center gap-3">
+                        <img src="shasin/logo.svg" alt=""> 
+                        <p class="font-bold">
+                            Mangcoding
+                        </p>
+                    </div> 
+                    
+
+                    <nav>
+                        <ul class="flex gap-5 items-center pl-20">
+                            <li><a href="#" class="active font-bold">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="right-side" class="flex items-center gap-10">
+                    <button>
+                        <img src="shasin/search.svg" alt="">
+                    </button>
+                    <a href="#get-started" class="button-primary">Get Started</a>
+                </div>
+            </section>
+        </section>
+        <section id="hero" class="flex flex-col gap-5">
+            <div class="max-w-[700px] mx-auto mt-[100px]">
+                <h1 class="text-2xl lg:text-4xl xl:text-5xl text-center font-nunito font-bold">It's Fun To Build a Website With The <span class="text-gradient">Mangcoding Team</span></h1>
+                <p class="text-center py-5">
+                    The Mangcoding team will help build a website for your company with quality and guaranteed services, with custom templates you can create a website as you like.
+                </p>
+            </div>
+            <div class="action mx-auto flex justify-center items-center gap-10">
+                <a href="#get-started" class="button-primary">Get Started</a>
+                <a href="#" class="underline flex items-center gap-5 hover:no-underline">Explore our blog <img src="shasin/arrow-right.svg" alt=""></a>
+            </div>
+            <img src="shasin/thumbnail.png" alt="" class="mx-auto">
+        </section>
+    </header>
+</body>
+
+
+    <div class="brand">
+        <div  class="mx-auto mt-[50px]">
+            <p class="text-2xl text-center">Brands that trust us
+            </p>
+        </div>
+
+        <div class="flex justify-center gap-28 mt-10 pb-16">
+            <img src="shasin/image 1.png" alt="">
+            <img src="shasin/image 2.png" alt="">
+            <img src="shasin/image 3.png" alt="">
+            <img src="shasin/image 4.png" alt="">
+            <img src="shasin/image 5.png" alt="">
+            <img src="shasin/Frame.png" alt="">
+        </div>
+
+    </div >
+
+    <div class="bg-gradient-to-r from-cyan-100 via-pink-100   to-lime-100">
+
+        <div class=" container mx-auto   ">
+
+            <!-- part2 -->
+
+            <div class=" mx-auto pt-20 ">
+                <div class="flex items-center justify-center align-center mx-auto justify-between">
+
+                    <div>
+                        <h1 class="font-bold text-5xl mb-4 flex ">
+                            services
+                        </h1>
+                    </div>
+                    <div class="">
+                        <button href="#build-website" class="button-primary ">Build website</button>
+                    </div>
+                </div>
+               
+                <p class="max-w-[600px]">
+                    Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora, på trekavis. 
+                    Makrona tregät plang. Bekässade kast, eftersom sore. 
+                </p>
+
+                <div class="grid grid-cols-3 gap-6   pb-40  mt-20 " >
+                    <div class=" bg-white">
+    
+                        <div class="flex justify-center mt-10 mb-10">
+                            <img  src="shasin/Shopify logo.png" alt="">
+                        </div>
+                            <p class="flex justify-center gap-5 font-bold mb-2.5">
+                                Shopify Theme Development
+                            </p>
+                            <p class=" text-center text-sm font-normal w-56 ml-32 mb-10 ">
+                                Start from 700 USD for project base  or 35 USD per hour
+                            </p>
+                    </div>
+    
+                    <div class="bg-white">
+                        <div class="flex justify-center mt-10 mb-10">
+                            <img  src="shasin/PHP logo.png" alt="">
+                        </div>
+                            <p class="flex justify-center gap-5 font-bold  mb-2.5">
+                                Web Application Development
+                            </p>
+                            <p class="text-center text-sm font-normal w-56 ml-32 ">
+                                Start from 700 USD for project base  or 35 USD per hour
+                            </p>
+                    </div>
+                    
+                    <div class=" row-span-2 bg-white">
+    
+                        <div class="flex justify-center mt-10 mb-10">
+                            <img  src="shasin/group1.png" alt="">
+                        </div>
+                            <p class="flex justify-center gap-5 font-bold  mb-2.5">
+                                Assistans Services
+                            </p>
+
+                            <p class="text-center text-sm font-normal w-56 ml-32 mb-20  ">
+                                Start from 33 USD for project base or 35 USD per hour
+                            </p>
+
+                            <p class="flex justify-center mb-10  ">
+                                More Services :
+                            </p >
+
+                            <p class="text-center font-bold w-56 ml-32 ">
+                                Technical Assistans Support Assistans VIP Assistans Social Media Admin
+                            </p>
+    
+                    </div>
+    
+                    <div class="bg-white">
+    
+                        <div class="flex justify-center mt-10 mb-10">
+                            <img  src="shasin/wordpress-lockup logo.png" alt="">
+                        </div>
+                            <p class="flex justify-center gap-5 font-bold  mb-2.5">
+                                WordPress Theme Development
+                            </p>
+                            <p class="text-center text-sm font-normal w-56 ml-32  ">
+                                Start from 700 USD for project base  or 35 USD per hour
+                            </p>
+    
+                    </div>
+                    <div class="bg-white">
+    
+                        <div class="flex justify-center mt-10 mb-10">
+                            <img  src="shasin/group2.png" alt="">
+                        </div>
+                            <p class="flex justify-center gap-5 font-bold  mb-2.5">
+                                Custom App/Plugins Development
+                            </p>
+                            <p class="text-center text-sm font-normal w-56 ml-32 mb-10">
+                                Start from 700 USD for project base  or 35 USD per hour
+                            </p>
+    
+                    </div>
+                    
+                </div>
+            </div >
+
+            
+        </div>
+
+    </div>
+
+
+
+
+        
+
+       <!-- part 3 -->
+
+       <div class="container mx-auto">
+        <div class="max-w-[500px] mx-auto mt-[100px]">
+            <h1 class=" flex justify-center text-5xl font-bold">
+                what we do 
+            </h1>
+            <p class="text-center mt-10 text-sm font-normal mb-20 ">Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora, på trekavis. 
+                    Makrona tregät plang. Bekässade kast, eftersom sore. </p>
+        </div>
+
+        <!--  -->
+        <div class="relative">
+            <div class="pt-36 pl-72 absolute bottom-44">
+                <img src="shasin/line.png" alt="">
+            </div>
+            <div class="container flex items-center gap-48 pl-48 pt-20">
+                <div>
+                    <img src="shasin/blue.png" alt="">
+                    <h3 class="text-center mt-11 text-lg font-bold">Design</h3>
+
+                </div>
+                <div>
+                    <img src="shasin/yell.png" alt="">
+                    <h3 class="text-center mt-11 text-lg font-bold">Front-end</h3>
+                </div>
+                <div>
+                    <img src="shasin/pin.png" alt="">
+                    <h3 class="text-center mt-11 text-lg font-bold">Back-end</h3>
+                </div>
+                <div>
+                    <img src="shasin/gree.png" alt="">
+                    <h3 class="text-center mt-11 text-lg font-bold">Check Test</h3>
+                </div>
+            </div>
+
+
+
+            <div class="flex px-40 gap-24 pt-3.5 items-center text-neutral-700">
+                <p class="text-center text-sm font-normal w-56">Create Wireframe Display Designs And Initial UI Designs
+                    For Websites</p>
+                <p class="text-center text-sm font-normal w-56">Create Wireframe Display Designs And Initial UI Designs
+                    For Websites</p>
+                <p class="text-center text-sm font-normal w-56">Create Wireframe Display Designs And Initial UI Designs
+                    For Websites</p>
+                <p class="text-center text-sm font-normal w-56">Create Wireframe Display Designs And Initial UI Designs
+                    For Websites</p>
+            </div>
+        </div>
+        
+        <!--  -->
+
+       </div>
+
+       <!-- part 4 -->
+
+       <div class="container mx-auto" >
+
+        <div class="mt-[100px]">
+            <h1 class="flex justify-center text-5xl font-bold">
+                Our Work
+            </h1>
+            <p class="text-center mt-10 text-sm font-normal mb-20">
+                Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora,
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 rows-2 gap-6 ">
+
+            <div class="flex justify-center gap-6">
+
+                <div class="">
+                    <img src="shasin/grp1.png" alt="">
+                    <h1 class="mt-5 mb-5 font-bold text-2xl"> 
+                        Retainer Orely Studio
+                         </h1>
+    
+                         <a class="text-slate-400" href="#">https://retainer.orely.co/</a>
+    
+                         <div class="mt-5  flex gap-5">
+                            <button class="text-sm font-medium border-2 border-zinc-300 py-1 px-6">WordPress</button> 
+                         <button class="text-sm font-medium border-2 border-zinc-300 py-1 px-6">tailwind</button>
+                         </div>
+    
+                    </div>
+    
+                    <div class="">
+                        <img src="shasin/grp2.png" alt="">
+                        <h1 class="mt-5 mb-5 font-bold text-2xl"> 
+                            Beacukai Sangatta
+                             </h1>
+        
+                             <a class="text-slate-400" href="#">https://retainer.orely.co/</a>
+        
+                             <div class="mt-5  flex gap-5">
+                                <button class="text-sm font-medium border-2 border-zinc-300 py-1 px-6">WordPress</button> 
+                             <button class="text-sm font-medium border-2 border-zinc-300 py-1 px-6">tailwind</button>
+                             <button class="text-sm font-medium border-2 border-zinc-300 py-1 px-6">desigh</button>
+                             </div>
+        
+                        </div>
+
+            </div>
+
+            <div class="flex justify-center gap-6">
+
+                <div class="">
+                    <img src="shasin/grp3.png" alt="">
+                    <h1 class="mt-5 mb-5 font-bold text-2xl"> 
+                        Federasi Ice Skating Indonesia
+                         </h1>
+    
+                         <a class="text-slate-400" href="#">https://retainer.orely.co/</a>
+    
+                         <div class="mt-5  flex gap-5">
+                            <button class="text-sm font-medium border-2 border-zinc-300 py-1 px-6">WordPress</button> 
+                         <button class="text-sm font-medium border-2 border-zinc-300 py-1 px-6">tailwind</button>
+                         <button class="text-sm font-medium border-2 border-zinc-300 py-1 px-6">desigh</button>
+                         </div>
+    
+                    </div>
+    
+                    <div class="">
+                        <img src="shasin/grp2.png" alt="">
+                        <h1 class="mt-5 mb-5 font-bold text-2xl"> 
+                            Retainer Orely Studio
+                             </h1>
+        
+                             <a class="text-slate-400" href="#">https://retainer.orely.co/</a>
+        
+                             <div class="mt-5  flex gap-5">
+                                <button class="text-sm font-medium border-2 border-zinc-300 py-1 px-6">WordPress</button> 
+                             <button class="text-sm font-medium border-2 border-zinc-300 py-1 px-6">tailwind</button>
+                             </div>
+        
+                        </div>
+
+            </div>
+
+          
+
+              
+
+                            
+        </div>
+
+        <div class="flex justify-center items-center pt-11 ">
+            <button href="#our-work" class="button-primary flex justify-center align-center items-center">our work</button>
+            
+        </div>
+
+        
+       </div>
+       
+        <!-- part 5 -->
+       <div class="bg-header ">
+        <div>
+            <div class="max-w-[400px] mx-auto mt-[100px] pt-20">
+                <h1 class="text-center mb-10  font-bold text-2xl">
+                    <label class="bg-gradient-to-r from-cyan-400 via-pink-400 to-orange-500 text-transparent bg-clip-text" for="">What people say about</label>
+                    <label for="">Mangcoding Team?</label>
+                </h1>
+
+                <p class="text-center text-2xl ">
+                    “ It was a great experience to work with Mangcoding, 
+                    we love the details result, and professionalism.“
+                </p>
+
+                <div class="flex justify-center mt-10"> 
+                    <img src="shasin/image 16.png" alt="">
+                </div>
+
+                <h1 class="text-center font-bold mt-10 ">
+                    Riko Sapto Dimo
+                </h1>
+                <p class="text-center text-slate-400">
+                    Managing Director Orely.co
+
+                </p>
+
+               
+            </div>
+             
+            
+        </div>
+       </div>
+
+       <!-- part 6 -->
+
+       <div>
+
+        <div class="container mx-auto">
+            <div class="flex justify-center">
+                <h1 class="mt-10 mb-10 font-bold text-3xl">Our Blog</h1>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 flex justify-center ">
+
+                <div>
+                    <img src="shasin/img19.png" alt="">
+                    <p>8 Alasan Pentingnya Melakukan Pencadangan Situs Web</p>
+                </div>
+
+                <div>
+                    <img src="shasin/img20.png" alt="">
+                    <p>8 Alasan Pentingnya Melakukan Pencadangan Situs Web</p>
+                </div> 
+
+                <div>
+                    <img src="shasin/img21.png" alt=""> 
+                    <p>8 Alasan Pentingnya Melakukan Pencadangan Situs Web</p>
+                </div>
+                
+
+                
+               
+            </div>
+
+            <div class="flex justify-center items-center mt-10 mb-20 ">
+                <button href="#our-work" class="button-primary flex justify-center align-center items-center">our work</button>
+
+
+        </div>
+
+       </div>
+
+ <!-- last part -->
+
+ <div class="bg-gradient-to-r from-cyan-100 via-purple-100 to-lime-100 mt-10 mb-10">
+    <div class="pb-28">
+
+         <div class="container mx-auto">
+        <div class="">
+
+            <div class="flex items-center justify-center align-center mx-auto justify-between">
+
+                    <div>
+                        <h1 class="font-bold text-5xl pt-20 mb-4">
+                            Let's build a website with mangcoding
+                        </h1>
+                    </div>
+
+                    <div class="">
+                        <button href="#build-website" class="button-primary ">Build website</button>
+                    </div>
+                </div>
+            <p class="text-lg">
+                Mangcoding team will help you in branding your product
+            </p>
+        </div>
+       </div>
+
+    </div>
+   
+
+ </div>
+
+     
+
+       <footer class="container mx-auto">
+        <div class="grid grid-cols-5 gap-2 flex justify-center">
+
+            <div>
+                <div class="flex items-center gap-3">
+                    <img src="shasin/logo.svg" alt=""> 
+                    <p class="font-bold">
+                        Mangcoding
+                    </p>
+                </div> 
+                <p class="mt-10 w-72">
+                    Mangcoding Team Will Help You In Branding Your Product  asdMangcoding Team 
+                    Will Help You In Branding Your Product asdMangcoding Team Will Help.
+                </p>
+
+                <div class="flex items-center gap-3 mt-10">
+                    <img src="shasin/insta.png" alt="">
+                    <img src="shasin/gith.png" alt="">
+                    <img src="shasin/yt.png" alt="">
+                    <img src="shasin/in.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="ml-20">
+                <p class="font-bold">mangcoding</p>
+                <p class="w-1 mt-10">
+                    Home About Services Blog Work Resource Contact
+                </p>
+            </div>
+
+            <div class="">
+                <p class="font-bold">
+                    service
+                </p>
+                <p class="w-72 mt-10 ">
+                    Custom WordPress Theme Development
+                    Custom Plugin WordPress
+                    Custom Shopify Theme Development
+                    Custom App for Shopify
+                    Web Application
+                </p>
+            </div>
+
+            <div class="ml-20">
+                <img src="shasin/trust.png" alt="">
+            </div>
+
+            <div>
+                <p class="font-bold">
+                    service
+                </p>
+
+                <div class="flex items-center gap-3">
+                    <img src="shasin/email.png" alt="">
+                    <p>
+                        hello@mangcoding.com
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-3 mt-5">
+                    <img src="shasin/phone.png" alt="">
+                    <p class="w-40">
+                        0266-6532078
+                        WA:0857-5940-2332
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-3 mt-5">
+                    <img src="shasin/gps.png" alt="">
+                    <p>
+                        PT Anugrah Kreasi Digital. karang tengah, Cibadak - Sukabumi
+                    </p>
+                </div>
+
+            </div>
+            
+
+            
+
+        </div>
+
+        <div >
+            <p class="text-center text-slate-400 ">
+                © 2022 Mangcoding. All rights reserved.
+            </p>
+        </div>
+       </footer>
+
+
+
+
+
+</html>
